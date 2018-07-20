@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="ServerActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:color/darker_gray"
+		android:padding="5dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/tv_ip"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:text="my ip address"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<EditText
+				android:id="@+id/et_port"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:ems="10"
+				android:inputType="number|numberDecimal"
+				android:digits="0123456789."
+				android:hint="PORT"
+				android:textSize="14sp"/>
+
+			<Button
+				android:id="@+id/btn_init_service"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:text="init Service"
+				android:textSize="14sp"/>
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<EditText
+				android:id="@+id/et_txt"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:ems="10"
+				android:inputType="text"
+				android:hint="TEXT"
+				android:textSize="14sp"/>
+
+			<Button
+				android:id="@+id/btn_send"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:text="send"
+				android:textSize="14sp"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/lv"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+</LinearLayout>
